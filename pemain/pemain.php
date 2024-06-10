@@ -173,6 +173,14 @@ require_once "../template/sidebar.php";
         function printDoc() {
             const myWindow = window.open("../report/r-pemain.php", "", "widht=900, height=600, left=100");
         }
+
+        let usiaKU = document.getElementById('usia');
+
+        function previewPDF() {
+            if (usiaKU.value != '') {
+                const myWindow = window.open("../report/r-usia-ku.php?usiaKU=" + usiaKU.value);
+            }
+        }
     </script>
 
 

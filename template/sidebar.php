@@ -35,6 +35,10 @@
                             <div class="sb-nav-link-icon"><i class="fa-solid fa-trophy"></i></div>
                             Achievement
                         </a>
+                        <a class="nav-link" href="<?= $main_url ?>data-ku/k-usia.php">
+                            <div class="sb-nav-link-icon"><i class="fa-solid fa-calendar-day"></i></div>
+                            Kelompok Umur
+                        </a>
                         <hr class="mb-0">
                 </div>
                 <div class="sb-sidenav-footer border">

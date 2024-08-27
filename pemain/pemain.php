@@ -153,9 +153,9 @@ require_once "../template/sidebar.php";
                         <?php
                         $dataKU = mysqli_query($koneksi, "SELECT * FROM tbl_pemain");
                         while ($data = mysqli_fetch_array($dataKU)) { ?>
-                            <option value="<?= $usia->y . "&nbsp" . "Thn" ?>">UTAMA</option>
-                            <option value="<?= $usia->y . "&nbsp" . "Thn" ?>">KU35</option>
-                            <option value="<?= $usia->y . "&nbsp" . "Thn" ?>">KU40</option>
+                            <option value="<?= $data['nama'] ?>"><?= date('d M Y', strtotime($data['tglLahir'])) ?>
+                                <? $data['noa'] ?>
+                            </option>
                             <?php
                         }
                         ?>
